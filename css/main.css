@@ -1,0 +1,291 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 16px;
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	line-height: 1.5em;
+}
+
+ p {
+ 	line-height: 1.65em;
+ }
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.header {
+	background: rgb(78,190,254);
+	background: linear-gradient(125deg, rgba(78,190,254,1) 0%, rgba(55,143,217,1) 100%);
+	padding-top: 60px;
+	padding-bottom: 140px;
+	color: #fff;
+}
+
+.wrapper {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.title {
+	font-size: 37px;
+	width: 565px;
+}
+
+.title span {
+	font-size: 59px;
+}
+
+.intro {
+	margin-top: 40px;
+	margin-bottom: 45px;
+	width: 400px;
+}
+
+.btn {
+	background: #ffd429;
+	font-size: 15px;
+	font-family: 'Montserrat', sans-serif;
+	color: #000;
+	display: block;
+	width: 220px;
+	padding: 18px 0;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+.btn:hover {
+	background: #d6af16;
+	cursor: pointer;
+}
+
+.future {
+	padding-top: 108px;
+	padding-bottom: 110px;
+}
+
+.section-title {
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.pros {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+}
+
+.plus {
+	width: 300px;
+	background: url('../img/icon1.jpg') no-repeat top;
+	padding-top: 80px;
+
+}
+
+.plus-title {
+	text-align: center;
+	font-size: 19px;
+}
+
+.plus-text {
+	margin-top: 15px;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+
+}
+
+.plus-travel {
+	width: 290px;
+	background: url('../img/icon2.jpg') no-repeat top;
+}
+
+.plus-value {
+	width: 310px;
+	background: url('../img/icon3.jpg') no-repeat top;
+}
+
+.order {
+	background: #ecf3f8;
+	padding-top: 104px;
+	padding-bottom: 102px;
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+}
+
+.order:hover {
+	background-color: #9CCDF0;
+	transition-duration: 500ms;
+}
+
+.form {
+	max-width: 340px;
+	margin: 0 auto;
+}
+
+.input {
+	width: 100%;
+	height: 46px;
+	border: 1px solid #bbbbbb;
+	font-size: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	margin: 15px 0;
+	padding-left: 25px;
+}
+
+.btn-form {
+	width: 100%;
+	border: 0;
+	cursor: pointer;
+	margin: 15px 0;
+}
+
+.footer {
+	padding: 63px 0;
+	background: #164d7a;
+}
+
+.credits {
+	color: #FFFFFF;
+	font-size: 14px;
+	margin: 0;
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+}
+
+.red {
+	color: red;
+}
+
+.animate__animated {
+	opacity: 1;
+}
+
+
+/* Responsive */
+
+/* 1200px - 1400px */
+
+@media screen and (max-width: 1400px) {
+	.container {
+		width: 1200px;
+	}
+	.wrapper {
+		flex-direction: column;
+	}
+	.offer {
+		width: 100%;
+	}
+	.intro {
+		width: auto;
+	}
+	.desktop {
+		display: block;
+	    width: 641px;
+	    margin: 0 auto;
+	}
+}
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 993px;
+	}
+	.plus {
+		margin: 30px;
+	}
+	.plus-travel {
+		margin: 15px;
+	}
+	.plus-title {
+		line-height: 1.05em;
+	}
+	.plus-value {
+		margin: 30px;
+	}
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.title {
+		max-width: 100%;
+	}
+	.btn {
+		width: 100%;
+	}
+	.desktop {
+		width: 100%;
+	}
+	.pros {
+		flex-direction: column;
+	}
+	.plus {
+		margin-bottom: 50px;
+	    margin: 0 auto;
+	}
+	.plus-travel {
+		margin-bottom: 50px;
+	    margin: 0 auto;
+	}
+	.plus-value {
+		margin-bottom: 50px;
+	    margin: 0 auto;
+	}
+}
+
+/* 0 - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+	.header {
+		padding-bottom: 40px;
+	}
+	.title {
+		font-size: 30px;
+		margin-top: 30px;
+	}
+	.title span {
+		font-size: 50px;
+	}
+	.desktop {
+		padding-top: 40px;
+	}
+	.plus {
+		max-width: 90%;
+		padding-bottom: 20px;
+	}
+	.plus-value {
+		max-width: 90%;
+	}
+}	
